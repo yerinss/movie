@@ -1,0 +1,31 @@
+/* Home.css */
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  .loader{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+  }
+  .movies {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    /* fr : fractional unit(사용가능한 공간에 대한 비율) */
+    grid-gap: 100px;
+    width: 80%;
+    padding: 50px;
+    padding-top: 70px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .movies {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+  
